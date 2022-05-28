@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "TopicosEspeciais_Rn_AvaliacaoProcessual3",
+    "slug": "TopicosEspeciais_Rn_AvaliacaoProcessual3",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "TopicosEspeciais_Rn_AvaliacaoProcessual3"
+}
