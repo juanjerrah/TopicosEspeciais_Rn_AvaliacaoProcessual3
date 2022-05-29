@@ -8,7 +8,7 @@ const App = () => {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar backgroundColor='#565454' style='light'/>
-      <View>
+      <View style={styles.main}>
         <Counter/>
       </View>
     </SafeAreaView>
@@ -25,6 +25,11 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 25,
     fontWeight: '500',
+  },
+  main:{
+    width: 310,
+    alignItems: 'center',
+    textAlign: 'center'
   }
 });
 
