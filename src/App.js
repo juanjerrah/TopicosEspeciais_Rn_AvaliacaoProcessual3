@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
 import Counter from './components/Counter';
+import { styles } from './AppStyles';
 
 const App = () => {
   return (
@@ -14,23 +15,5 @@ const App = () => {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#424242'
-  },
-  text: {
-    fontSize: 25,
-    fontWeight: '500',
-  },
-  main:{
-    width: 310,
-    alignItems: 'center',
-    textAlign: 'center'
-  }
-});
 
 export default App;
