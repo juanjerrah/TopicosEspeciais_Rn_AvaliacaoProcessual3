@@ -15,9 +15,12 @@ export default function Counter(){
             }
             
             <TouchableOpacity style={styles.button} onPress={()=>{setCounter(counter + 1)}} >
-                {counter == 0 
+                {(counter == 0) 
                     ? <Text style={styles.textButton}>Clique Aqui</Text> 
-                    : <Text style={styles.textButton}>{counter} Cliques</Text>
+                    : (counter === 1)
+                        ?<Text style={styles.textButton}>{counter} Clique</Text>
+                        : (counter != 0 && counter > 1) &&                  
+                            <Text style={styles.textButton}>{counter} Cliques</Text>
                 }
             </TouchableOpacity>
             <TouchableOpacity style={styles.restartButton} onPress={()=>{setCounter(0)}}>
