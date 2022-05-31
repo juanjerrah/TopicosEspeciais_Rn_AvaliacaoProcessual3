@@ -6,9 +6,12 @@ export default function Counter(){
     const [counter, setCounter] = useState(0);
     return(
         <>
-            {counter == 0 
-                ? <Text style={styles.title}>Clica aí, vai!!!</Text> 
-                : <Text style={styles.title}>Você clicou {counter} vezes!</Text>
+            {(counter === 0) 
+                ? <Text style={styles.title}>Clica aí, vai!!!</Text>
+                : (counter === 1) 
+                    ? <Text style={styles.title}>Você clicou {counter} vez!</Text>
+                    : (counter != 0 && counter > 1) 
+                        && <Text style={styles.title}>Você clicou {counter} vezes!</Text>
             }
             
             <TouchableOpacity style={styles.button} onPress={()=>{setCounter(counter + 1)}} >
